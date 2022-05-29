@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+  *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Zen Maru Gothic', sans-serif;
+       /*background: #ecd4d4;*/
+    }
+
+a{
+    text-decoration: none;
+}
+.superior{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background: #ddb3b3;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    
+}
+.logo{
+    flex: 1 1 auto;
+}
+    .logo a{
+    color: black;
+    font-size: 30px;
+           }
+.nav{
+    flex: 1 1 auto;
+}
+     .nav a{
+         color:#000;
+         text-transform: uppercase;
+         padding: 0 20px;
+         letter-spacing: 2px;
+     }
+     .nav a:hover{
+         color: violet;
+     }
+.social{
+    flex: 1 1 auto;
+}
+.principal{
+    background: #ccdbe2;
+}
+h1 , h3{
+    background: #efeff1;
+    text-align: center;
+    line-height: normal;
+}
+
+.seccion, .datos {
+    background: #ecd4d4;
+    display: flex;
+    flex-flow: column nowrap; 
+    padding: 20px; 
+   
+}
+.articulos{   
+    display: flex;
+    flex-flow: wrap;  
+}
+
+.article{
+    background: #efeff1;
+    padding: 15px;
+    flex: auto;
+}
+ .article img{
+   padding: auto;
+  
+}
+
+/*transicion imagenes*/
+
+.article img:hover{
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+
+} 
+.info{
+    align-self: center;
+    padding: 15px;
+    
+}
+  .datos .datodelaempresa .info li {
+    list-style:none;
+    padding: 10px;
+  }
+
+
+.datodelaempresa{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap; 
+    align-self: center; 
+    padding: 10px; 
+}
+
+.seccion .article li {
+    list-style:none;
+    padding: 10px;
+  }
+
+/*formulario*/
+.form{
+    max-width: 90%;
+    margin: auto;
+    background: wheat;
+    margin-bottom: 25px;  
+    padding: 30px;
+}
+.formtitulo {
+text-align: center;
+font-size: medium;
+font-weight: bold;
+}
+.FormInput{
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.FormInput label{
+    display: block;
+    margin-top: 15px;
+    font-size: medium;
+    font-weight: normal;
+}
+.checkbox{
+    text-align: center;
+}
+
+.BotonEnviar{
+    background: cadetblue;
+    padding: 7px 13px;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 33px;
+    border: none;
+}
+.BotonEnviar:hover{
+    background: #ddb3b3;
+    /*transicion*/
+    transition: 0.5;
+}
+.warnings{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: red;
+}
+
+.footer{
+    background: #ccdbe2;
+    display: flex;
+    flex-flow: nowrap;
+    padding: 20px;
+       
+}
+    .codoacodo{
+        flex: 1 1 auto;
+        align-self: center;
+        margin: 10px;
+    }
+    .GCBA{
+        flex: 1 1 auto;
+        align-self: center;
+        margin: 10px;
+    }
+    .comentarios{
+        flex: 1 1 auto;
+        align-self: center;
+        margin: 10px;
+    }
+
+@media all and (max-width: 800px){
+    .seccion{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;        
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media all and (max-width: 600px){
+    .article {
+         flex-direction: column;
+     }
+}
+@media all and (max-width: 400px){
+    .footer{
+         flex-direction: column;
+     }
+}
+
